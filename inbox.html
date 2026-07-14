@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE — Premium Fashion Store</title>
+    <meta name="description"
+        content="Discover luxury fashion essentials at LUXE. Shop the latest collections of clothing, shoes, and accessories.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-inner">
+            <span><i class='bx bxs-truck'></i> Free shipping on orders over $50</span>
+            <span class="divider">|</span>
+            <span><i class='bx bxs-offer'></i> Use code <strong>LUXE20</strong> for 20% off</span>
+            <span class="divider">|</span>
+            <span><i class='bx bx-refresh'></i> 30-day easy returns</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <a href="#" class="logo">LUX<span>É</span></a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#sellers">Shop</a></li>
+                <li><a href="#news">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="nav-icon" id="searchToggle" aria-label="Search"><i class='bx bx-search'></i></button>
+                <button class="nav-icon" aria-label="Wishlist"><i class='bx bx-heart'></i><span
+                        class="badge">2</span></button>
+                <button class="nav-icon" aria-label="Cart"><i class='bx bx-shopping-bag'></i><span
+                        class="badge">3</span></button>
+                <a href="#" class="btn-nav">Sign In</a>
+            </div>
+        </div>
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-box">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search for products..." id="searchInput">
+                <button class="search-close" id="searchClose"><i class='bx bx-x'></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="https://i.postimg.cc/t403yfn9/home2.jpg" alt="Fashion Collection">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag" data-aos="fade-up">Summer Collection 2025</span>
+            <h1 data-aos="fade-up">Elevate Your<br><span class="gradient-text">Style Game</span></h1>
+            <p data-aos="fade-up">A specialist label creating luxury essentials. Ethically crafted with an unwavering
+                commitment to exceptional quality.</p>
+            <div class="hero-actions" data-aos="fade-up">
+                <a href="#sellers" class="btn-primary">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                <a href="#collections" class="btn-outline">Explore Collections</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><strong>200+</strong><span>Brands</span></div>
+                <div class="stat"><strong>15K+</strong><span>Products</span></div>
+                <div class="stat"><strong>30K+</strong><span>Customers</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Strip -->
+    <section class="features-strip">
+        <div class="container">
+            <div class="feature-item"><i class='bx bxs-truck'></i>
+                <div><strong>Free Delivery</strong><span>On orders over $50</span></div>
+            </div>
+            <div class="feature-item"><i class='bx bx-refresh'></i>
+                <div><strong>Easy Returns</strong><span>30-day return policy</span></div>
+            </div>
+            <div class="feature-item"><i class='bx bx-shield-quarter'></i>
+                <div><strong>Secure Payment</strong><span>100% secure checkout</span></div>
+            </div>
+            <div class="feature-item"><i class='bx bx-support'></i>
+                <div><strong>24/7 Support</strong><span>Dedicated support</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section id="collections" class="collections-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Curated For You</span>
+                <h2>Shop By Category</h2>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-card large">
+                    <img src="https://i.postimg.cc/Xqmwr12c/clothing.webp" alt="Clothing">
+                    <div class="collection-overlay">
+                        <span class="collection-count">120+ Items</span>
+                        <h3>Clothing</h3>
+                        <a href="#sellers" class="btn-collection">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="Shoes">
+                    <div class="collection-overlay">
+                        <span class="collection-count">85+ Items</span>
+                        <h3>Shoes</h3>
+                        <a href="#sellers" class="btn-collection">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://i.postimg.cc/MHv7KJYp/access.webp" alt="Accessories">
+                    <div class="collection-overlay">
+                        <span class="collection-count">60+ Items</span>
+                        <h3>Accessories</h3>
+                        <a href="#sellers" class="btn-collection">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="sellers" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Best Picks</span>
+                <h2>Trending Now</h2>
+            </div>
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="tab active" data-filter="all">All</button>
+                <button class="tab" data-filter="top">Top Sales</button>
+                <button class="tab" data-filter="new">New Arrivals</button>
+                <button class="tab" data-filter="hot">Hot Deals</button>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="top">
+                    <div class="product-img">
+                        <span class="product-badge sale">-30%</span>
+                        <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="PS England Shoes">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Wishlist"><i class='bx bx-heart'></i></button>
+                            <button class="action-btn" aria-label="Quick View"><i class='bx bx-show'></i></button>
+                            <button class="action-btn" aria-label="Compare"><i class='bx bx-transfer'></i></button>
+                        </div>
+                        <a href="#" class="quick-add">Add to Cart</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Footwear</span>
+                        <h4>PS England Shoes</h4>
+                        <div class="product-rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><i class='bx bx-star'></i><i
+                                class='bx bx-star'></i><span>(24)</span></div>
+                        <div class="product-price"><span class="current">$37.24</span><span
+                                class="original">$53.20</span></div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-category="top">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/76X9ZV8m/Screenshot_from_2022-06-03_18-45-12.png"
+                            alt="PS England Jacket">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Wishlist"><i class='bx bx-heart'></i></button>
+                            <button class="action-btn" aria-label="Quick View"><i class='bx bx-show'></i></button>
+                            <button class="action-btn" aria-label="Compare"><i class='bx bx-transfer'></i></button>
+                        </div>
+                        <a href="#" class="quick-add">Add to Cart</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Jackets</span>
+                        <h4>PS England Jacket</h4>
+                        <div class="product-rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bx-star'></i><i class='bx bx-star'></i><i
+                                class='bx bx-star'></i><span>(12)</span></div>
+                        <div class="product-price"><span class="current">$17.24</span></div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-category="new">
+                    <div class="product-img">
+                        <span class="product-badge new">New</span>
+                        <img src="https://i.postimg.cc/j2FhzSjf/bs2.png" alt="PS England Shirt">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Wishlist"><i class='bx bx-heart'></i></button>
+                            <button class="action-btn" aria-label="Quick View"><i class='bx bx-show'></i></button>
+                            <button class="action-btn" aria-label="Compare"><i class='bx bx-transfer'></i></button>
+                        </div>
+                        <a href="#" class="quick-add">Add to Cart</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Shirts</span>
+                        <h4>PS England Shirt</h4>
+                        <div class="product-rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bx-star'></i><span>(38)</span></div>
+                        <div class="product-price"><span class="current">$27.24</span></div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-category="hot">
+                    <div class="product-img">
+                        <span class="product-badge hot">Hot</span>
+                        <img src="https://i.postimg.cc/QtjSDzPF/bs3.png" alt="PS England Shoes">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Wishlist"><i class='bx bx-heart'></i></button>
+                            <button class="action-btn" aria-label="Quick View"><i class='bx bx-show'></i></button>
+                            <button class="action-btn" aria-label="Compare"><i class='bx bx-transfer'></i></button>
+                        </div>
+                        <a href="#" class="quick-add">Add to Cart</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Footwear</span>
+                        <h4>PS England Premium</h4>
+                        <div class="product-rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><span>(56)</span></div>
+                        <div class="product-price"><span class="current">$43.67</span></div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" data-category="new">
+                    <div class="product-img">
+                        <span class="product-badge new">New</span>
+                        <img src="https://i.postimg.cc/fbnB2yfj/na1.png" alt="PS England T-Shirt">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Wishlist"><i class='bx bx-heart'></i></button>
+                            <button class="action-btn" aria-label="Quick View"><i class='bx bx-show'></i></button>
+                            <button class="action-btn" aria-label="Compare"><i class='bx bx-transfer'></i></button>
+                        </div>
+                        <a href="#" class="quick-add">Add to Cart</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">T-Shirts</span>
+                        <h4>PS England T-Shirt</h4>
+                        <div class="product-rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><span>(72)</span></div>
+                        <div class="product-price"><span class="current">$10.23</span></div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-category="new">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/zD02zJq8/na2.png" alt="PS England Bag">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Wishlist"><i class='bx bx-heart'></i></button>
+                            <button class="action-btn" aria-label="Quick View"><i class='bx bx-show'></i></button>
+                            <button class="action-btn" aria-label="Compare"><i class='bx bx-transfer'></i></button>
+                        </div>
+                        <a href="#" class="quick-add">Add to Cart</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Bags</span>
+                        <h4>PS England Bag</h4>
+                        <div class="product-rating"><i class='bx bxs-star'></i><i class='bx bx-star'></i><i
+                                class='bx bx-star'></i><i class='bx bx-star'></i><i
+                                class='bx bx-star'></i><span>(8)</span></div>
+                        <div class="product-price"><span class="current">$9.28</span></div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card" data-category="hot">
+                    <div class="product-img">
+                        <span class="product-badge sale">-40%</span>
+                        <img src="https://i.postimg.cc/Dfj5VBcz/sunglasses1.jpg" alt="Sunglasses">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Wishlist"><i class='bx bx-heart'></i></button>
+                            <button class="action-btn" aria-label="Quick View"><i class='bx bx-show'></i></button>
+                            <button class="action-btn" aria-label="Compare"><i class='bx bx-transfer'></i></button>
+                        </div>
+                        <a href="#" class="quick-add">Add to Cart</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accessories</span>
+                        <h4>PS England Sunglass</h4>
+                        <div class="product-rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><span>(44)</span></div>
+                        <div class="product-price"><span class="current">$6.24</span><span
+                                class="original">$10.40</span></div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card" data-category="hot">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/RhVP7YQk/hs1.png" alt="PS England T-Shirt">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Wishlist"><i class='bx bx-heart'></i></button>
+                            <button class="action-btn" aria-label="Quick View"><i class='bx bx-show'></i></button>
+                            <button class="action-btn" aria-label="Compare"><i class='bx bx-transfer'></i></button>
+                        </div>
+                        <a href="#" class="quick-add">Add to Cart</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">T-Shirts</span>
+                        <h4>PS England Classic</h4>
+                        <div class="product-rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                class='bx bxs-star'></i><span>(31)</span></div>
+                        <div class="product-price"><span class="current">$15.24</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <span class="promo-tag">Limited Time Offer</span>
+                <h2>Summer Sale<br><span class="gradient-text">Up to 50% Off</span></h2>
+                <p>Don't miss out on our biggest sale of the season. Premium quality at unbeatable prices.</p>
+                <a href="#sellers" class="btn-primary">Shop the Sale <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">From Our Blog</span>
+                <h2>Fashion Trends</h2>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-img"><img src="https://i.postimg.cc/2y6wbZCm/news1.jpg" alt="Blog"><span
+                            class="news-date"><i class='bx bxs-calendar'></i> Feb 12, 2025</span></div>
+                    <div class="news-body">
+                        <span class="news-cat">Beauty</span>
+                        <h4>What Curling Irons Are The Best Ones</h4>
+                        <p>Discover the top picks for achieving perfect curls this season...</p>
+                        <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-img"><img src="https://i.postimg.cc/9MXPK7RT/news2.jpg" alt="Blog"><span
+                            class="news-date"><i class='bx bxs-calendar'></i> Feb 17, 2025</span></div>
+                    <div class="news-body">
+                        <span class="news-cat">Health</span>
+                        <h4>The Health Benefits Of Sunglasses</h4>
+                        <p>Why investing in quality sunglasses is essential for your eye health...</p>
+                        <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-img"><img src="https://i.postimg.cc/x1KKdRLM/news3.jpg" alt="Blog"><span
+                            class="news-date"><i class='bx bxs-calendar'></i> Feb 26, 2025</span></div>
+                    <div class="news-body">
+                        <span class="news-cat">Jewelry</span>
+                        <h4>Eternity Bands Do Last Forever</h4>
+                        <p>Exploring the timeless elegance of eternity bands and their symbolism...</p>
+                        <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <i class='bx bx-envelope'></i>
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Be the first to know about new arrivals, sales & exclusive offers!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <div class="info-card"><i class='bx bx-map'></i>
+                        <h4>Visit Us</h4>
+                        <p>195 E Parker Square Dr,<br>Parker, CO 801</p>
+                    </div>
+                    <div class="info-card"><i class='bx bx-phone'></i>
+                        <h4>Call Us</h4>
+                        <p>+43 982-314-0958</p>
+                    </div>
+                    <div class="info-card"><i class='bx bx-envelope'></i>
+                        <h4>Email Us</h4>
+                        <p>hello@luxe-store.com</p>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/xzbowpjq" method="POST">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message <i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="footer-logo">LUX<span>É</span></a>
+                    <p>The customer is at the heart of our unique business model, which includes design, craftsmanship,
+                        and retail.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest'></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shopping</h4>
+                    <a href="#sellers">Clothing Store</a>
+                    <a href="#sellers">Trending Shoes</a>
+                    <a href="#sellers">Accessories</a>
+                    <a href="#sellers">Sale</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#">Payment Methods</a>
+                    <a href="#">Delivery Info</a>
+                    <a href="#">Return & Exchange</a>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LUXÉ. All rights reserved. Designed by <strong>ankitrajcodes</strong></p>
+                <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="Payment Methods">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class='bx bx-chevron-up'></i></button>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
